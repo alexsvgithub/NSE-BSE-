@@ -4,7 +4,8 @@ import pandas as pd
 df=pd.read_csv("NIFTY100.csv")
 symbols = df['Symbol']
 print(symbols)
-lists = [x for x in symbols]
+#lists = [x for x in symbols]
+lists = ['HDFC']
 print(lists)
 for i in lists:
     #nse data
@@ -17,3 +18,5 @@ for i in lists:
     print(link)
     webbrowser.open(link, new=1)
 print("DONE")
+
+#1648524583 - 28-03-2022
